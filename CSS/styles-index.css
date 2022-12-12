@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    background-image: url(../images/Fondos/fondo-login-mobile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.filter-blur{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80vw;
+    height: 100vh;
+    max-width: 650px;
+}
+.cuadro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 80%;
+    background-color: rgba(255, 255, 255, 0.795);
+    border-radius: 1em;
+}
+.img-cafe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 25%;
+}
+.img-cafe img{
+    width: 100%;
+    height: 90%;
+}
+.cuadro h1{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-weight: lighter;
+    font-size: 3.2em;
+    margin-bottom: 1em;
+}
+.container form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    padding: 0.5em;
+    border-radius: 1em;
+}
+.container form input{
+    font-size: 1.3em;
+    padding: .8em;
+    margin: 0.5em;
+    border-radius: 0.5em;
+    border: none;
+}
+#boton{
+    background-color: rgba(0, 0, 0, 0.774);
+    color: rgb(255, 255, 255);
+    font-size: 1.3em;
+    padding: .6em;
+    margin: 1.8em;
+    border-radius: 0.5em;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    transition: 0.3s;
+}
+#boton:hover{
+    background-color: rgba(0, 0, 0, 0.9);
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.cuadro a{
+    color:rgb(0, 0, 0);
+    font-size: 1.1em;
+    text-decoration: none;
+}
+.cuadro a:hover{
+    color: rgb(248, 79, 0);
+}
+@media(min-width: 720px){
+    body{
+        background-image: url("../Images/Fondos/fondo-login.jfif");
+    }
+    .img-cafe{
+        width: 30%;
+    }
+}

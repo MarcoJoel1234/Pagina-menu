@@ -1,0 +1,366 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgba(209, 216, 219, 0.767);
+    
+}
+h1{font-size: 3.5em;}
+h2{font-size: 3em;}
+h3{font-size: 1.5em;}
+h4{font-size: 1.2em;}
+ul{list-style: none;}
+li{font-size: 1em;}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+header{
+    display: flex;
+    background-color: rgba(238, 112, 9, 0.801);
+}
+header .logos{
+    display: flex;
+    justify-content: center;
+    padding: 15px 50px;
+}
+header .logo-UPT{
+    display:none;
+}
+header .logo-cafe{
+    width: 60%;
+    padding-top: 10px;
+}
+.logo-cafe img{
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+header .logo-ing{
+    display: none;
+}
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 30px 15px 0;
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+header a{
+    font-size: 1.2em;
+    padding: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+#inicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),
+    url('../Images/logos/upt-foto.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+#inicio h1{
+    color: white;
+    font-size: 3em;
+    text-shadow: 2px 2px 7px rgb(17, 17, 17);
+    margin: 0;
+    font-weight: bold;
+}
+#inicio p{
+    color: rgb(202, 125, 8);
+    font-size: 1.5em;
+    text-shadow: 2px 2px 7px rgb(17, 17, 17);
+    font-weight: bold;
+}
+#platillos{
+    padding: 50px 0;
+    background-color: rgba(190, 108, 1, 0.795);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#platillos h2{
+    color: white;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 7px rgb(17, 17, 17);
+    margin: 0;
+    font-weight: bold;
+}
+
+#titulo-platillo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#titulo-platillo h2{
+    font-size: 2em;
+}
+#comida{
+    overflow-x: hidden;
+}
+#bebida{
+    overflow-x: hidden;
+}
+#frituras{
+    overflow-x: hidden;
+}
+.carrusel{
+    width: 100%;
+}
+.grande1{
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    width: 1000%;
+    height: 80%;
+    transition: all .5s ease;
+    transform: translateX(0%);
+}
+.grande2{
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    width: 1000%;
+    height: 80%;
+    transition: all .5s ease;
+    transform: translateX(0%);
+}
+.grande3{
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    width: 1000%;
+    height: 80%;
+    transition: all .5s ease;
+    transform: translateX(0%);
+}
+
+.div-plati{
+    text-align: center;
+    width: calc(1000% / 10);
+    padding: 1.1em;
+    height: 100%;
+    min-height: 10vh;
+    color: wheat;
+    font-weight: bold;
+}
+.puntos{
+    display: flex;
+    justify-content: center;
+    flex-flow: row nowrap;
+    align-items: center;
+    padding: .4em;
+    width: 100%;
+    margin: 1em 0 0;
+}
+.puntos .punto{
+    border-radius: 10px;
+    width: .6em;
+    height: .6em;
+    margin: .5em;
+    background-color: rgba(252, 252, 252, 0.842);
+}
+.puntos .punto.activo{
+    width: .8em;
+    height: .8em;
+    background-color: rgba(233, 143, 8, 0.842);
+}
+#contactos{
+    margin: 10px;
+}
+#contactos .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#contactos .container h4{
+    color: rgb(0, 0, 0);
+    font-size: 1.5em;
+    text-shadow: 2px 2px 7px rgb(255, 255, 255);
+    font-weight: bold;
+}
+#contactos .container form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    width: 100%;
+}
+#textarea{
+    text-align: center;
+    flex-flow: column wrap;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 10px;
+}
+#contactos form input{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    background-color: rgb(235, 125, 0);
+    color: aliceblue;
+    font-weight: bold;
+    transition: 0.3s;
+}
+#contactos form input:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+footer{
+    width: 100%;
+    background-color: rgb(80, 46, 1);
+}
+footer .container p{
+    text-align: center;
+    padding: 15px;
+    color: rgb(255, 255, 255);
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.redes-sociales{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-flow: row nowrap;
+    width: 100%;
+}
+.redes-sociales a img{
+    width: 50%;
+    border-radius: 10px;
+}
+#copy{
+    text-align:end;
+    padding: 0 15px 0 0;
+    color: rgb(117, 111, 111);
+    font-size: .8em;
+}
+
+@media (min-width: 720px){
+    header .logo-cafe{
+        width: 25%;
+        margin: 0;
+    }
+    header .logos{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header .logo-UPT{
+        display: block;
+        width: 15%;
+    }
+    header .logo-UPT img{
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    header .logo-ing{
+        display: block;
+        width: 12%;
+    }
+    header .logo-ing img{
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    header a{
+        font-size: 1.3em;
+        padding: 40px;
+    }
+    #inicio{
+        height: 120vh;
+    }
+    #inicio h1{
+        font-size: 5em;
+    }
+    #inicio p{
+        font-size: 2em;
+    }
+    #platillos{
+        height: 20vh;
+    }
+    #platillos h2{
+        font-size: 3em;
+    }
+    #titulo-platillo h2{
+        font-size: 2.5em;
+    }
+    .carrusel{
+        height: 70vh;
+    }
+    .div-plati{
+        padding: .8%;
+    }
+    .div-plati h3{
+        font-size: 2.5em;
+    }
+    .div-plati p{
+        font-size: 1.7em;
+    }
+    #contactos form input{
+        width: 30%;
+        margin: 10px;
+    }
+    #contactos .container h4{
+        font-size: 2.2em;
+        margin: 0;
+    }
+    #contactos .container p{
+        padding: 20px;
+        font-size: 1.2em;
+        margin: 0;
+    }
+    #textarea{
+        font-size: 1.2em;
+        padding: 0;
+    }
+    footer{
+        height: 20vh;
+    }
+    .redes-sociales a{
+        width: 20%;
+        padding: 0;
+    }
+    .redes-sociales a img{
+        width: 30%;
+        padding: 10px;
+    }
+    #copy{
+        font-size: 1em;
+    }
+}
+header a:hover{
+    color: rgb(105, 60, 0);
+}
